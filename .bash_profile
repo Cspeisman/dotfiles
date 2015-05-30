@@ -22,8 +22,6 @@ alias pyenv='source /usr/local/bin/virtualenvwrapper.sh; workon default'
 ## makes virtualenv with python3
 alias mkvirtualenv3='mkvirtualenv --python=$(which python3)'
 
-### Python server
-function www() {
-    port=${1}
-    python -m SimpleHTTPServer $port
-  }
+## I always forget the python server method
+alias www3='python3 -m http.server'
+alias www='python -m SimpleHTTPServer'
